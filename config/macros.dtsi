@@ -34,3 +34,17 @@
     #binding-cells = <0>;
     bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
   };
+
+  lfat_arrow: lfat_arrow {
+      compatible = "zmk,behavior-macro";
+      label = "ZM_lfat_arrow";
+      #binding-cells = <0>;
+      bindings = <&kp LESS_THAN &kp EQUAL>;
+  };
+
+  rfat_arrow: rfat_arrow {
+      compatible = "zmk,behavior-macro";
+      label = "ZM_rfat_arrow";
+      #binding-cells = <0>;
+      bindings = <&kp EQUAL &kp GREATER_THAN>;
+  };
