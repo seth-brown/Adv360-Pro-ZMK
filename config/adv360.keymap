@@ -17,18 +17,18 @@
             bindings = <&kp RET>;
         };
 
-        left_fat_arrow: left_fat_arrow {
+        lfat_arrow: lfat_arrow {
             compatible = "zmk,behavior-macro";
-            label = "left_fat_arrow";
+            label = "ZM_lfat_arrow";
             #binding-cells = <0>;
-            bindings = <&kp LESS_THAN>, <&kp EQUAL>;
+            bindings = <&kp LESS_THAN &kp EQUAL>;
         };
 
-        right_fat_arrow: right_fat_arrow {
+        rfat_arrow: rfat_arrow {
             compatible = "zmk,behavior-macro";
-            label = "right_fat_arrow";
+            label = "ZM_rfat_arrow";
             #binding-cells = <0>;
-            bindings = <&kp EQUAL>, <&kp GREATER_THAN>;
+            bindings = <&kp EQUAL &kp GREATER_THAN>;
         };
 
         #endif
@@ -66,7 +66,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE   &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT              &kp DOWN               &kp UP          &kp RIGHT         &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN   &kp GREATER_THAN  &kp QUESTION  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                        &trans                 &trans          &trans            &trans        &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                        &trans                 &lfat_arrow     &rfat_arrow       &trans        &trans
             >;
         };
 
