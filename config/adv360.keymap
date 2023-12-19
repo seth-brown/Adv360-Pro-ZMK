@@ -21,14 +21,14 @@
             compatible = "zmk,behavior-macro";
             label = "left_fat_arrow";
             #binding-cells = <0>;
-            bindings = <&kp T>, <&kp E>, <&kp S>, <&kp T>;
+            bindings = <&kp LESS_THAN>, <&kp EQUAL>;
         };
-        
+
         right_fat_arrow: right_fat_arrow {
             compatible = "zmk,behavior-macro";
             label = "right_fat_arrow";
             #binding-cells = <0>;
-            bindings = <&kp L>, <&kp E>, <&kp F>, <&kp T>;
+            bindings = <&kp EQUAL>, <&kp GREATER_THAN>;
         };
 
         #endif
