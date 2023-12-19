@@ -17,6 +17,20 @@
             bindings = <&kp RET>;
         };
 
+        left_fat_arrow: left_fat_arrow {
+            compatible = "zmk,behavior-macro";
+            label = "left_fat_arrow";
+            #binding-cells = <0>;
+            bindings = <&kp T>, <&kp E>, <&kp S>, <&kp T>;
+        };
+        
+        right_fat_arrow: right_fat_arrow {
+            compatible = "zmk,behavior-macro";
+            label = "right_fat_arrow";
+            #binding-cells = <0>;
+            bindings = <&kp L>, <&kp E>, <&kp F>, <&kp T>;
+        };
+
         #endif
 
         hm: homerow_mods {
